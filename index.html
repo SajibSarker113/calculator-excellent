@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator New</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+            <div class="calculator">
+                <input type="text" name="display" id="screen" class="display" disabled>
+                <table>
+                    <tr>
+                        <td><input type="button" value="&radic;" class="button" onclick="document.getElementById('screen').value = Math.sqrt(document.getElementById('screen').value)"></td>
+                        <td><input type="button" value="CE" class="button" onclick="document.getElementById('screen').value = '' "></td>
+                        <td><input type="button" value="C" class="button" onclick="document.getElementById('screen').value = '' "></td>
+                        <td><input type="button" value="&#8592" class="button" onclick="document.getElementById('screen').value = document.getElementById('screen').value.slice(0, -1)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" class="button" onclick="document.getElementById('screen').value += '7'"></td>
+                        <td><input type="button" value="8" class="button" onclick="document.getElementById('screen').value += '8'"></td>
+                        <td><input type="button" value="9" class="button" onclick="document.getElementById('screen').value += '9'"></td>
+                        <td><input type="button" value="+" class="button" onclick="document.getElementById('screen').value += '+'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" class="button" onclick="document.getElementById('screen').value += '4'"></td>
+                        <td><input type="button" value="5" class="button" onclick="document.getElementById('screen').value += '5'"></td>
+                        <td><input type="button" value="6" class="button" onclick="document.getElementById('screen').value += '6'"></td>
+                        <td><input type="button" value="-" class="button" onclick="document.getElementById('screen').value += '-'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" class="button" onclick="document.getElementById('screen').value += '1'"></td>
+                        <td><input type="button" value="2" class="button" onclick="document.getElementById('screen').value += '2'"></td>
+                        <td><input type="button" value="3" class="button" onclick="document.getElementById('screen').value += '3'"></td>
+                        <td><input type="button" value="*" class="button" onclick="document.getElementById('screen').value += '*'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="0" class="button" onclick="document.getElementById('screen').value += '0'"></td>
+                        <td><input type="button" value="." class="button" onclick="document.getElementById('screen').value += '.'"></td>
+                        <td><input type="button" value="=" class="button" onclick="document.getElementById('screen').value = eval(document.getElementById('screen').value)"></td>
+                        <td><input type="button" value="/" class="button" onclick="document.getElementById('screen').value += '/'"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</body>
+<!-- <script src="index.js"></script> -->
+</html>
